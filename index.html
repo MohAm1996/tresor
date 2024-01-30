@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <title>Dungeon Explorer</title>
+
+</head>
+
+<body>
+    <!--Start Interface -->
+    <div class="interface">
+        <div class="container">
+            <h2>Dungeon Explorer</h2>
+            <div class="head" id="headerGame">
+                <div class="body-progress">
+                    <span id="enegryCountId">40</span>/40
+                    <div class="progress" id="progress-bar">
+
+                    </div>
+                </div>
+                <div class="score">
+                    <div>Score : </div>
+                    <div><span id="scoreUpdate">0</span> </div>
+                </div>
+            </div>
+            <div>
+                <canvas id="game">
+
+                </canvas>
+            </div>
+
+
+
+            <!-- Start Game Over alert -->
+            <div id="GameOverAlert" class="model">
+                <div class="box-content">
+                    <div class="box-header">
+                        <h2>GAME OVER</h2>
+                    </div>
+                    <div class="box-body">
+                        <span style="padding: 20px">YOUR SCORE IS :<span style="margin-left:10px;font-weight: bold;"
+                                id="finalScore"></span></span>
+                        <button class="retry" id="retry">Retry</button>
+                    </div>
+                </div>
+            </div>
+            <!-- END Game Over alert -->
+
+
+            <!-- Start Exit Dungeon alert -->
+            <div id="exit" class="model">
+                <div class="box-content">
+                    <div class="box-header-exit">
+                        <h2>You left the dungeon</h2>
+                    </div>
+                    <div class="box-body">
+                        <span style="padding: 20px">YOUR SCORE IS :<span style="margin-left:10px;font-weight: bold;"
+                                id="finalScoreExit"></span></span>
+                                <button class="retry" id="retryExit">Retry</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Start Exit Dungeon alert -->
+
+
+
+        </div>
+    </div>
+    <script src="js/game.js" type="module"></script>
+</body>
+
+</html>
